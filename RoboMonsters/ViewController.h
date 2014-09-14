@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIActionSheetDelegate,MFMailComposeViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshOutlet;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelText;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 
 @end

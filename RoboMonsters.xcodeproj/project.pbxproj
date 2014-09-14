@@ -22,6 +22,21 @@
 		9C18CD2019C60481006EF126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C18CCFF19C60480006EF126 /* UIKit.framework */; };
 		9C18CD2819C60481006EF126 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD2619C60481006EF126 /* InfoPlist.strings */; };
 		9C18CD2A19C60481006EF126 /* RoboMonstersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18CD2919C60481006EF126 /* RoboMonstersTests.m */; };
+		9C18CD4519C61070006EF126 /* R6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3719C61070006EF126 /* R6.jpg */; };
+		9C18CD4619C61070006EF126 /* M6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3819C61070006EF126 /* M6.jpg */; };
+		9C18CD4719C61070006EF126 /* R4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3919C61070006EF126 /* R4.jpg */; };
+		9C18CD4819C61070006EF126 /* M0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3A19C61070006EF126 /* M0.jpg */; };
+		9C18CD4919C61070006EF126 /* M4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3B19C61070006EF126 /* M4.jpg */; };
+		9C18CD4A19C61070006EF126 /* R5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3C19C61070006EF126 /* R5.jpg */; };
+		9C18CD4B19C61070006EF126 /* R3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3D19C61070006EF126 /* R3.jpg */; };
+		9C18CD4C19C61070006EF126 /* M5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3E19C61070006EF126 /* M5.jpg */; };
+		9C18CD4D19C61070006EF126 /* M1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD3F19C61070006EF126 /* M1.jpg */; };
+		9C18CD4E19C61070006EF126 /* R1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD4019C61070006EF126 /* R1.jpg */; };
+		9C18CD4F19C61070006EF126 /* M2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD4119C61070006EF126 /* M2.jpg */; };
+		9C18CD5019C61070006EF126 /* R2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD4219C61070006EF126 /* R2.jpg */; };
+		9C18CD5119C61070006EF126 /* R0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD4319C61070006EF126 /* R0.jpg */; };
+		9C18CD5219C61070006EF126 /* M3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C18CD4419C61070006EF126 /* M3.jpg */; };
+		9C18CD5519C6278A006EF126 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18CD5419C6278A006EF126 /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +70,22 @@
 		9C18CD2519C60481006EF126 /* RoboMonstersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoboMonstersTests-Info.plist"; sourceTree = "<group>"; };
 		9C18CD2719C60481006EF126 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C18CD2919C60481006EF126 /* RoboMonstersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoboMonstersTests.m; sourceTree = "<group>"; };
+		9C18CD3719C61070006EF126 /* R6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R6.jpg; sourceTree = "<group>"; };
+		9C18CD3819C61070006EF126 /* M6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M6.jpg; sourceTree = "<group>"; };
+		9C18CD3919C61070006EF126 /* R4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R4.jpg; sourceTree = "<group>"; };
+		9C18CD3A19C61070006EF126 /* M0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M0.jpg; sourceTree = "<group>"; };
+		9C18CD3B19C61070006EF126 /* M4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M4.jpg; sourceTree = "<group>"; };
+		9C18CD3C19C61070006EF126 /* R5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R5.jpg; sourceTree = "<group>"; };
+		9C18CD3D19C61070006EF126 /* R3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R3.jpg; sourceTree = "<group>"; };
+		9C18CD3E19C61070006EF126 /* M5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M5.jpg; sourceTree = "<group>"; };
+		9C18CD3F19C61070006EF126 /* M1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M1.jpg; sourceTree = "<group>"; };
+		9C18CD4019C61070006EF126 /* R1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R1.jpg; sourceTree = "<group>"; };
+		9C18CD4119C61070006EF126 /* M2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M2.jpg; sourceTree = "<group>"; };
+		9C18CD4219C61070006EF126 /* R2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R2.jpg; sourceTree = "<group>"; };
+		9C18CD4319C61070006EF126 /* R0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = R0.jpg; sourceTree = "<group>"; };
+		9C18CD4419C61070006EF126 /* M3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M3.jpg; sourceTree = "<group>"; };
+		9C18CD5319C6278A006EF126 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		9C18CD5419C6278A006EF126 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +145,9 @@
 		9C18CD0119C60480006EF126 /* RoboMonsters */ = {
 			isa = PBXGroup;
 			children = (
-				9C18CD0A19C60481006EF126 /* AppDelegate.h */,
-				9C18CD0B19C60481006EF126 /* AppDelegate.m */,
-				9C18CD0D19C60481006EF126 /* Main_iPhone.storyboard */,
-				9C18CD1019C60481006EF126 /* Main_iPad.storyboard */,
-				9C18CD1319C60481006EF126 /* ViewController.h */,
-				9C18CD1419C60481006EF126 /* ViewController.m */,
+				9C18CD3519C604B1006EF126 /* Controllers */,
+				9C18CD3419C604A3006EF126 /* Root */,
+				9C18CD3319C6048F006EF126 /* UI */,
 				9C18CD1619C60481006EF126 /* Images.xcassets */,
 				9C18CD0219C60480006EF126 /* Supporting Files */,
 			);
@@ -129,6 +157,7 @@
 		9C18CD0219C60480006EF126 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C18CD3619C61061006EF126 /* Images */,
 				9C18CD0319C60480006EF126 /* RoboMonsters-Info.plist */,
 				9C18CD0419C60481006EF126 /* InfoPlist.strings */,
 				9C18CD0719C60481006EF126 /* main.m */,
@@ -153,6 +182,56 @@
 				9C18CD2619C60481006EF126 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C18CD3319C6048F006EF126 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9C18CD0D19C60481006EF126 /* Main_iPhone.storyboard */,
+				9C18CD1019C60481006EF126 /* Main_iPad.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9C18CD3419C604A3006EF126 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9C18CD0A19C60481006EF126 /* AppDelegate.h */,
+				9C18CD0B19C60481006EF126 /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		9C18CD3519C604B1006EF126 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C18CD1319C60481006EF126 /* ViewController.h */,
+				9C18CD1419C60481006EF126 /* ViewController.m */,
+				9C18CD5319C6278A006EF126 /* InfoViewController.h */,
+				9C18CD5419C6278A006EF126 /* InfoViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C18CD3619C61061006EF126 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C18CD3719C61070006EF126 /* R6.jpg */,
+				9C18CD3819C61070006EF126 /* M6.jpg */,
+				9C18CD3919C61070006EF126 /* R4.jpg */,
+				9C18CD3A19C61070006EF126 /* M0.jpg */,
+				9C18CD3B19C61070006EF126 /* M4.jpg */,
+				9C18CD3C19C61070006EF126 /* R5.jpg */,
+				9C18CD3D19C61070006EF126 /* R3.jpg */,
+				9C18CD3E19C61070006EF126 /* M5.jpg */,
+				9C18CD3F19C61070006EF126 /* M1.jpg */,
+				9C18CD4019C61070006EF126 /* R1.jpg */,
+				9C18CD4119C61070006EF126 /* M2.jpg */,
+				9C18CD4219C61070006EF126 /* R2.jpg */,
+				9C18CD4319C61070006EF126 /* R0.jpg */,
+				9C18CD4419C61070006EF126 /* M3.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +310,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C18CD4F19C61070006EF126 /* M2.jpg in Resources */,
+				9C18CD4E19C61070006EF126 /* R1.jpg in Resources */,
+				9C18CD4D19C61070006EF126 /* M1.jpg in Resources */,
+				9C18CD4A19C61070006EF126 /* R5.jpg in Resources */,
+				9C18CD4519C61070006EF126 /* R6.jpg in Resources */,
+				9C18CD5219C61070006EF126 /* M3.jpg in Resources */,
 				9C18CD1219C60481006EF126 /* Main_iPad.storyboard in Resources */,
+				9C18CD4C19C61070006EF126 /* M5.jpg in Resources */,
+				9C18CD5119C61070006EF126 /* R0.jpg in Resources */,
+				9C18CD4819C61070006EF126 /* M0.jpg in Resources */,
+				9C18CD4619C61070006EF126 /* M6.jpg in Resources */,
+				9C18CD5019C61070006EF126 /* R2.jpg in Resources */,
+				9C18CD4B19C61070006EF126 /* R3.jpg in Resources */,
+				9C18CD4919C61070006EF126 /* M4.jpg in Resources */,
 				9C18CD1719C60481006EF126 /* Images.xcassets in Resources */,
 				9C18CD0F19C60481006EF126 /* Main_iPhone.storyboard in Resources */,
+				9C18CD4719C61070006EF126 /* R4.jpg in Resources */,
 				9C18CD0619C60481006EF126 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +348,7 @@
 			files = (
 				9C18CD1519C60481006EF126 /* ViewController.m in Sources */,
 				9C18CD0C19C60481006EF126 /* AppDelegate.m in Sources */,
+				9C18CD5519C6278A006EF126 /* InfoViewController.m in Sources */,
 				9C18CD0819C60481006EF126 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,10 +484,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Humberto Sampaio (WB6FHFDGC3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboMonsters/RoboMonsters-Prefix.pch";
 				INFOPLIST_FILE = "RoboMonsters/RoboMonsters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a1ff8ffe-d017-4365-96ba-0a37472f6d23";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +500,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Humberto Sampaio (5U294U2N56)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoboMonsters/RoboMonsters-Prefix.pch";
 				INFOPLIST_FILE = "RoboMonsters/RoboMonsters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "768737ca-e229-4673-9d7b-30fe0f133fa6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
