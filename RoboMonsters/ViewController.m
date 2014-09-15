@@ -24,11 +24,15 @@
 
 @synthesize refreshOutlet;
 @synthesize labelText,imageView;
+@synthesize flag,spinner,searchCache;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
+    self.searchCache=[[UIBarButtonItem alloc]init];
+    self.labelText.text=@"";
+    self.flag=0;
     [self loadRandomImage];
     [self loadQuotes];
     
@@ -37,6 +41,7 @@
 
 #pragma mark - Working Methods
 -(void)loadRandomImage {
+    self.spinner.hidden=NO;
     // Random set
     int randomSet=arc4random()%3;
     randomSet++;
@@ -49,57 +54,70 @@
     
     NSString *urlString=[NSString stringWithFormat:@"http://robohash.org/%ld.png?set=set%d",randomNumber,randomSet];
     
-    // Load image from web
-    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
-    self.imageView.image=[UIImage imageWithData:data];
+//    // Load image from web
+//    NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+//    self.imageView.image=[UIImage imageWithData:data];
+    
+    
+    
+    ///
+    self.flag++;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // Loading quotes from web  <----------------
+        NSURL *url=[NSURL URLWithString:urlString];
+        NSData *data=[NSData dataWithContentsOfURL:url];
+        
+        // dispatch sync
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            // Got it. Back to  main queue
+            self.imageView.image=[UIImage imageWithData:data];
+            [self checkSpinner];
+            
+            
+        }); // dispatch_get_main_queue
+        
+    }); //dispatch_async
+    
     
     
 }
 
 -(void)loadQuotes {
-    //    NSMutableURLRequest *request=[[NSMutableURLRequest alloc]init];
-    
-    NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://www.iheartquotes.com/api/v1/random?format=json"]];
-    NSData *data=[NSData dataWithContentsOfURL:url];
-    NSError *e=nil;
-    NSDictionary *dic1 = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &e];
-    self.labelText.text=[dic1 objectForKey:@"quote"];
-    self.labelText.numberOfLines = 0;
-    
-    ///////
-//    // dispatch async
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        
-//        // Loading image from web  <----------------
-//        NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.posterPath]];
-//        
-//        // dispatch sync
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            UIImage *tempImage;
-//            if (data==nil) {
-//                NSData *imageData = UIImagePNGRepresentation([UIImage imageNamed:@"noImage"]);
-//                movie.photoData=imageData;
-//                tempImage=[UIImage imageWithData:imageData];
-//            } else {
-//                movie.photoData=data;
-//                tempImage=[UIImage imageWithData:movie.photoData];
-//            }
-//            
-//            cell.imageView.image=tempImage;
-//            
-//            [self.tableView beginUpdates];
-//            [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationNone];
-//            [self.tableView endUpdates];
-//            
-//        }); // dispatch_get_main_queue
-//        
-//    }); //dispatch_async
+    self.spinner.hidden=NO;
+    self.flag++;
+    // dispatch async
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // Loading quotes from web  <----------------
+        NSURL *url=[NSURL URLWithString:[NSString stringWithFormat:@"http://www.iheartquotes.com/api/v1/random?format=json"]];
+        NSData *data=[NSData dataWithContentsOfURL:url];
+        
+        // dispatch sync
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            // Got it. Back to  main queue
+            NSError *e=nil;
+            NSDictionary *dic1 = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &e];
+            self.labelText.text=[dic1 objectForKey:@"quote"];
+            self.labelText.numberOfLines = 0;
+            [self checkSpinner];
+            
+        }); // dispatch_get_main_queue
+        
+    }); //dispatch_async
 
 }
 
 
 #pragma mark - UI Actions
 - (IBAction)refresh:(id)sender {
+//    self.searchCache=sender;
+    // activity indicator
+
+    [self.spinner startAnimating];
+
+    
     [self loadRandomImage];
     [self loadQuotes];
 }
@@ -196,5 +214,13 @@
     return self.labelText.text;
 }
 
+-(void)checkSpinner {
+
+    if (self.flag>=2) {
+        [self.spinner stopAnimating];
+        self.flag=0;
+        self.spinner.hidden=YES;
+    }
+}
 
 @end

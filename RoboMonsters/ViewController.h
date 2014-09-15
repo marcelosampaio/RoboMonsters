@@ -19,4 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 
+@property int flag;
+
+@property (strong,nonatomic)UIBarButtonItem * searchCache;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 @end

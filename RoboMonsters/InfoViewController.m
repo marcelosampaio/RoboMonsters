@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"self.view.frame.size.height=%f",self.view.frame.size.height);
+
     if (self.view.frame.size.height==480 || self.view.frame.size.height==460) {
         // This is a 3.5" screen size
         self.placeholder1.alpha=0;
