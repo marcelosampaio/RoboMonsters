@@ -70,10 +70,14 @@
         
         // dispatch sync
         dispatch_async(dispatch_get_main_queue(), ^{
-            
+            [self checkSpinner];
+            if (!data) {
+                self.imageView.image=[UIImage imageNamed:@"noImage"];
+                return;
+            }
             // Got it. Back to  main queue
             self.imageView.image=[UIImage imageWithData:data];
-            [self checkSpinner];
+            
             
             
         }); // dispatch_get_main_queue
@@ -95,7 +99,11 @@
         
         // dispatch sync
         dispatch_async(dispatch_get_main_queue(), ^{
-
+            [self checkSpinner];
+            if (!data) {
+                self.labelText.text=@"Oops! Cannot connect to internet server!";
+                return;
+            }
             // Got it. Back to  main queue
             NSError *e=nil;
             NSDictionary *dic1 = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &e];
